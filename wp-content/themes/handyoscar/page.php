@@ -20,13 +20,13 @@ get_header();
  ?>
 	
 	<div class="s_wrapper">
-
+		<?php if($feat_image): ?>
 		<div class="page_slide_wrapper">
 			<div class="page_slide_img"><img src="<?php echo $feat_image; ?>" alt=""></div>
 		</div>
-
+		<?php endif; ?>
 	</div>
-
+	
 	<div class="breadcrumbs1_wrapper">
 		<div class="container">
 			<div class="breadcrumbs1"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a><span></span><?php the_title(); ?></div>
@@ -56,6 +56,7 @@ get_header();
 		                		endwhile;
 							?>
 						</ul>
+						<?php get_sidebar('general'); ?>
 					</div>
 				</div>
 

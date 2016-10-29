@@ -62,6 +62,7 @@ get_header();
 		                		endwhile;
 							?>
 						</ul>
+						<?php get_sidebar('contact'); ?>
 					</div>
 				</div>
 

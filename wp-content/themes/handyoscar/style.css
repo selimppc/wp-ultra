@@ -104,7 +104,7 @@ header{position: relative; text-align: center;}
 
 .top3_wrapper{position: relative; background: #fff;}
 
-.splash_wrapper{background: #544c4c; padding-top: 25px; margin-bottom: 7px;}
+.splash_wrapper{background: #544c4c; padding-top: 25px; padding-bottom: 7px;}
 
 .splash_wrapper .block1{}
 .splash_wrapper .block1 img{width: 100%;}
@@ -571,10 +571,32 @@ img.textaligncenter {
 	height: auto!important;
 }
 
+.general-sidebar {
+
+}
+.general-sidebar input,textarea{
+	width: calc(100% - 12px);
+	float: left;
+}
+.general-sidebar input.common_form_submit{
+	background-color: rgba(0,0,0,.5);
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 6px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.s_wrapper {
+	min-height: 50px;
+}
+
 /*----- media queries ------*/
 /* Large desktop */
 @media (min-width: 1200px) {
-	.splash_wrapper .block2{ min-height: 490px;}
+	/*.splash_wrapper .block2{ min-height: 490px;}*/
+	.splash_wrapper .block2{ min-height: 565px;}
 
 	#banner{padding-bottom: 0px;}
 

@@ -173,6 +173,26 @@ function twentyfifteen_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+	register_sidebar( array(
+		'name'          => __( 'General Sidebar', 'twentyfifteen' ),
+		'id'            => 'general-sidebar',
+		'description'   => __( 'Add widgets here to appear in your sidebar.', 'twentyfifteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+
+	register_sidebar( array(
+		'name'          => __( 'Contact Page Sidebar', 'twentyfifteen' ),
+		'id'            => 'contact-page-sidebar',
+		'description'   => __( 'Add widgets here to appear in your sidebar on contact page.', 'twentyfifteen' ),
+		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</aside>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
 }
 add_action( 'widgets_init', 'twentyfifteen_widgets_init' );
 

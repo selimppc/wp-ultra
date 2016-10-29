@@ -51,7 +51,7 @@
 					<div class="span4 pull-right">
 						<div class="block2">
 							<!--<div class="txt1">CONTACT WITH US</div>-->
-							<div class="txt1">Get a Query</div>
+							<div class="txt1">Get a Quote</div>
 							<div class="common_form_container" style="height:auto !important;">
 								<?php if ( is_active_sidebar( 'contact-form' ) ) : ?>
 									<?php dynamic_sidebar( 'contact-form' ); ?>

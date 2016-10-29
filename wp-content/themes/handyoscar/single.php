@@ -56,6 +56,7 @@ get_header();
 		                		endwhile;
 							?>
 						</ul>
+						<?php get_sidebar('general'); ?>
 					</div>
 				</div>
 

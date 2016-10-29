@@ -31,9 +31,14 @@ get_header();
 	<div id="content">
 		<div class="container">
 			<div class="row">
-				<div class="span12">
+				<div class="span8">
 					<h1><?php the_title(); ?></h1>
 					<?php the_content(); ?>
+				</div>
+				<div class="span4">
+					<div class="hl2">
+						<?php get_sidebar('general'); ?>
+					</div>
 				</div>
 					<div class="span12">
 					<ul class="thumbnails" id="isotope-items">
