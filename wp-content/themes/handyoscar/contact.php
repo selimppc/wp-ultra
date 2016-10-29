@@ -49,6 +49,7 @@ get_header();
 
 				<div class="span3">
 					<div class="hl2">
+						<?php get_sidebar('contact'); ?>
 						<h2>Our Services</h2>
 
 						<ul class="ul1">
@@ -62,7 +63,6 @@ get_header();
 		                		endwhile;
 							?>
 						</ul>
-						<?php get_sidebar('contact'); ?>
 					</div>
 				</div>
 
