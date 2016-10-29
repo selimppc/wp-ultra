@@ -43,7 +43,7 @@ get_header();
 
 				<div class="span4">
 					<div class="hl2">
-						<h2>Our Services</h2>
+						<h2>Our Services</h2> 
 
 						<ul class="ul1">
 							<?php
