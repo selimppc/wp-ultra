@@ -75,7 +75,7 @@ a[href^="tel:"] { color: inherit; text-decoration: none;}
 a{ color:#6793a8; text-decoration: underline; outline:none}
 a:hover{ color:#6793a8; text-decoration: none; outline:none}
 
-body{ background: #f1f0e6; border:0; font: 14px 'Ubuntu', Arial, Helvetica, sans-serif; color:#756e6e ; line-height:20px; min-width:320px;}
+body{ background: #f1f0e6; border:0; font: 14px 'Ubuntu', Arial, Helvetica, sans-serif; color:#444 ; line-height:20px; min-width:320px;}
 
 #main{margin: 0 auto; position: relative; overflow: hidden;}
 
@@ -286,7 +286,7 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 #menu_bot { list-style: none; display:block; white-space:nowrap;  padding: 0; margin: 0;}
 #menu_bot > li { list-style: none; display: block; position:relative; float:left; white-space:nowrap; padding-left: 15px; padding-right: 15px; }
 #menu_bot > li:first-child{ padding-left: 0; background: none;}
-#menu_bot > li > a{ display:block; text-decoration:none; position:relative; font-family:'Ubuntu'; font-weight: 500; font-size: 14px; color: #fff; line-height: 55px;}
+#menu_bot > li > a{ display:block; text-decoration:none; position:relative; font-family:'Ubuntu'; font-weight: 500; font-size: 15px; color: #fff; line-height: 55px;}
 #menu_bot > li > a:hover, #menu_bot > li > a:focus{color: #39B54A; text-decoration: none;}
 #menu_bot > li.active > a{color: #f1f0e6; text-decoration: none; background: url(../images/menu_bot2.png) center top no-repeat;}
 
