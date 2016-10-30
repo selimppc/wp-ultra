@@ -49,20 +49,7 @@ get_header();
 
 				<div class="span3">
 					<div class="hl2">
-						<?php get_sidebar('contact'); ?>
-						<h2>Our Services</h2>
-
-						<ul class="ul1">
-							<?php
-								$query = new WP_Query();
-							    $query->query('post_type=Services&orderby=menu_order&order=ASC&posts_per_page=8');
-						   		while ($query->have_posts()) : $query->the_post();
-							?>
-									<li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-							<?php
-		                		endwhile;
-							?>
-						</ul>
+						<?php get_sidebar('contact'); ?>						
 					</div>
 				</div>
 
