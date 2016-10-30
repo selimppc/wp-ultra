@@ -75,7 +75,7 @@ a[href^="tel:"] { color: inherit; text-decoration: none;}
 a{ color:#6793a8; text-decoration: underline; outline:none}
 a:hover{ color:#6793a8; text-decoration: none; outline:none}
 
-body{ background: #f1f0e6; border:0; font: 13px 'Ubuntu', Arial, Helvetica, sans-serif; color:#756e6e ; line-height:18px; min-width:320px;}
+body{ background: #f1f0e6; border:0; font: 14px 'Ubuntu', Arial, Helvetica, sans-serif; color:#756e6e ; line-height:20px; min-width:320px;}
 
 #main{margin: 0 auto; position: relative; overflow: hidden;}
 
