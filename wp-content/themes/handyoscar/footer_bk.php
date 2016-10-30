@@ -14,62 +14,35 @@
 									<div class="inner">
 										<div class="carousel main">
 											<ul>
-				                				<li>
-													<div class="banner nav1">
-														<div class="banner_inner">
-															<a href="<?php echo site_url('/junk-car-removal-sydney');?>">
-																<figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer-banner-thumb-1.jpg" alt="" class="img" style="height:200px;"><em></em></figure>
-																<div class="caption">
-																	<div class="txt1">Car removal</div>
-																	<div class="txt2"></div>
-																	<div class="txt3"></div>
+												<?php
+													$query = new WP_Query();
+							                		$query->query('post_type=Services&orderby=menu_order&order=ASC&posts_per_page=4'); //== For last 4 services
+							                		//$query->query('post_type=Services&orderby=menu_order&order=ASC'); //== For All Services
+							                		while ($query->have_posts()) : $query->the_post();
+							                			$feat_image = wp_get_attachment_url( get_post_thumbnail_id($post->ID) );
+							                			$custom_fields = get_post_custom(get_the_Id());
+
+							                	?>
+							                				<li>
+																<div class="banner nav1">
+																	<div class="banner_inner">
+																		<a href="<?php the_permalink(); ?>">
+
+																			<figure><img src="<?php echo $feat_image; ?>" alt="" class="img" style="height:200px;"><em></em></figure>
+																			<div class="caption">
+																				<div class="txt1"><?php the_title(); ?></div>
+																				<div class="txt2"><?php echo $custom_fields['Slogan'][0]; ?></div>
+																				<div class="txt3"><?php echo $custom_fields['short_description'][0]; ?></div>
+																			</div>
+																		</a>
+																	</div>
 																</div>
-															</a>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="banner nav1">
-														<div class="banner_inner">
-															<a href="<?php echo site_url('/how-does-it-work');?>">
-																<figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer-banner-thumb-2.jpg" alt="" class="img" style="height:200px;"><em></em></figure>
-																<div class="caption">
-																	<div class="txt1">How does it work</div>
-																	<div class="txt2"></div>
-																	<div class="txt3"></div>
-																</div>
-															</a>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="banner nav1">
-														<div class="banner_inner">
-															<a href="<?php echo site_url('/sell-unwanted-car');?>">
-																<figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer-banner-thumb-3.jpg" alt="" class="img" style="height:200px;"><em></em></figure>
-																<div class="caption">
-																	<div class="txt1">FAQ – Unwanted vehicles</div>
-																	<div class="txt2"></div>
-																	<div class="txt3"></div>
-																</div>
-															</a>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="banner nav1">
-														<div class="banner_inner">
-															<a href="<?php echo site_url('/quick-cash-for-car-sydney');?>">
-																<figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer-banner-thumb-4.jpg" alt="" class="img" style="height:200px;"><em></em></figure>
-																<div class="caption">
-																	<div class="txt1">Contact us</div>
-																	<div class="txt2"></div>
-																	<div class="txt3"></div>
-																</div>
-															</a>
-														</div>
-													</div>
-												</li>
+															</li>
+							                	<?php
+							                		endwhile;
+												?>
+												
+
 											</ul>
 										</div>
 									</div>
