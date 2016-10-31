@@ -121,7 +121,7 @@
 	<div class="container">
 		<div class="bot2 clearfix">
 
-			<footer style="float:left;">Copyright &copy;  2015. All rights reserved.</footer>
+			<footer style="float:left;">Copyright &copy;  2016. All rights reserved.</footer>
 			<footer style="float:right;"><a style="    color: #fff;
     text-decoration: none;" href="http://www.visionads.com.au/" target="_blank">Seo &amp; Website by VisionsAds</a></footer>
 
