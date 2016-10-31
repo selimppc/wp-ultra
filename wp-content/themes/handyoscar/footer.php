@@ -13,14 +13,27 @@
 								<div class="carousel-box">
 									<div class="inner">
 										<div class="carousel main">
+											
 											<ul>
-				                				<li>
+												<?php 
+													if ( function_exists( 'ot_get_option' ) ) {
+													  $footer_block_pages = ot_get_option( 'footer_blocks', array());
+
+													  if (!empty($footer_block_pages)) {
+													  	foreach ($footer_block_pages as $key => $value) {
+													  		$page_info = get_post($key);
+													  		$page_link = get_permalink($page_info->ID);
+													  		$page_thumb_id = get_post_meta($key, 'page_thumb_image', true);
+													  		if($page_thumb_id){
+													  			$page_attachment_url = wp_get_attachment_url($page_thumb_id[0]['page-thumb-image']);
+													  			?>
+									  			<li>
 													<div class="banner nav1">
 														<div class="banner_inner">
-															<a href="<?php echo site_url('/junk-car-removal-sydney');?>">
-																<figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer-banner-thumb-1.jpg" alt="" class="img" style="height:200px;"><em></em></figure>
+															<a href="<?php echo $page_link; ?>">
+																<figure><img src="<?php echo esc_url($page_attachment_url); ?>" alt="" class="img" style="height:200px;"><em></em></figure>
 																<div class="caption">
-																	<div class="txt1">Car removal</div>
+																	<div class="txt1"><?php echo $page_info->post_title; ?></div>
 																	<div class="txt2"></div>
 																	<div class="txt3"></div>
 																</div>
@@ -28,48 +41,13 @@
 														</div>
 													</div>
 												</li>
-												<li>
-													<div class="banner nav1">
-														<div class="banner_inner">
-															<a href="<?php echo site_url('/how-does-it-work');?>">
-																<figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer-banner-thumb-2.jpg" alt="" class="img" style="height:200px;"><em></em></figure>
-																<div class="caption">
-																	<div class="txt1">How does it work</div>
-																	<div class="txt2"></div>
-																	<div class="txt3"></div>
-																</div>
-															</a>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="banner nav1">
-														<div class="banner_inner">
-															<a href="<?php echo site_url('/sell-unwanted-car');?>">
-																<figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer-banner-thumb-3.jpg" alt="" class="img" style="height:200px;"><em></em></figure>
-																<div class="caption">
-																	<div class="txt1">FAQ – Unwanted vehicles</div>
-																	<div class="txt2"></div>
-																	<div class="txt3"></div>
-																</div>
-															</a>
-														</div>
-													</div>
-												</li>
-												<li>
-													<div class="banner nav1">
-														<div class="banner_inner">
-															<a href="<?php echo site_url('/quick-cash-for-car-sydney');?>">
-																<figure><img src="<?php echo esc_url( get_template_directory_uri() ); ?>/images/footer-banner-thumb-4.jpg" alt="" class="img" style="height:200px;"><em></em></figure>
-																<div class="caption">
-																	<div class="txt1">Contact us</div>
-																	<div class="txt2"></div>
-																	<div class="txt3"></div>
-																</div>
-															</a>
-														</div>
-													</div>
-												</li>
+													  			<?php
+													  		}
+													  		
+													  	}
+													  }
+													}
+												?>
 											</ul>
 										</div>
 									</div>
