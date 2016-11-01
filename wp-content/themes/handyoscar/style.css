@@ -557,6 +557,10 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 	float: left;
 }
 
+.common_form_container input[type="file"] {
+    line-height: 16px;
+}
+
 .common_form_container input.common_form_submit{
 	background-color: rgba(0,0,0,.5);
     border: none;
@@ -591,6 +595,9 @@ img.textaligncenter {
 .general-sidebar input,textarea{
 	width: calc(100% - 12px);
 	float: left;
+}
+.general-sidebar input[type="file"] {
+    line-height: 16px;
 }
 .general-sidebar input.common_form_submit{
 	background-color: rgba(0,0,0,.5);
