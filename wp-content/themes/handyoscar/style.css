@@ -617,7 +617,7 @@ img.textaligncenter {
 /* Large desktop */
 @media (min-width: 1200px) {
 	/*.splash_wrapper .block2{ min-height: 490px;}*/
-	.splash_wrapper .block2{ min-height: 565px;}
+	.splash_wrapper .block2{ min-height: 605px;}
 
 	#banner{padding-bottom: 0px;}
 
