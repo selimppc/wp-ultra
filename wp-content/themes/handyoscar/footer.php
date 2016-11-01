@@ -32,7 +32,11 @@
 													<div class="banner nav1">
 														<div class="banner_inner">
 															<a href="<?php echo $page_link; ?>">
-																<figure><img src="<?php echo esc_url($page_attachment_url); ?>" alt="" class="img" style="height:200px;"><em></em></figure>
+																<figure>
+
+																	<?php echo wp_get_attachment_image( $page_thumb_id[0]['page-thumb-image'], 'full', '', array( "class" => "img", "style" => "height: 200px;" ) ); ?>
+
+																</figure>
 																<div class="caption">
 																	<div class="txt1"><?php echo $page_info->post_title; ?></div>
 																	<div class="txt2"><?php echo $page_short_desc; ?></div>
