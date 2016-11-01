@@ -26,7 +26,8 @@
 													  		$page_thumb_id = get_post_meta($key, 'page_thumb_image', true);
 													  		if($page_thumb_id){
 													  			$page_attachment_url = wp_get_attachment_url($page_thumb_id[0]['page-thumb-image']);
-													  			?>
+													  			$page_short_desc = $page_thumb_id[0]['short-description'];
+												?>
 									  			<li>
 													<div class="banner nav1">
 														<div class="banner_inner">
@@ -34,14 +35,14 @@
 																<figure><img src="<?php echo esc_url($page_attachment_url); ?>" alt="" class="img" style="height:200px;"><em></em></figure>
 																<div class="caption">
 																	<div class="txt1"><?php echo $page_info->post_title; ?></div>
-																	<div class="txt2"></div>
+																	<div class="txt2"><?php echo $page_short_desc; ?></div>
 																	<div class="txt3"></div>
 																</div>
 															</a>
 														</div>
 													</div>
 												</li>
-													  			<?php
+												<?php
 													  		}
 													  		
 													  	}
