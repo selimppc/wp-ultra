@@ -185,7 +185,7 @@ transition: all 0.3s ease-out; -moz-transition: all 0.3s ease-out; -webkit-trans
 .banner .banner_inner a:hover .caption{color: #fff; height: 100px; margin-top: -60px; position: relative; z-index: 2;}
 
 .banner .banner_inner a .caption .txt1{font-family: 'Oswald'; font-size: 16px; text-transform: uppercase;}
-.banner .banner_inner a .caption .txt2{text-transform: uppercase;}
+.banner .banner_inner a .caption .txt2{/*text-transform: uppercase;*/}
 .banner .banner_inner a .caption .txt3{padding-top: 10px;}
 
 .splash2{ margin-top: 25px;}
