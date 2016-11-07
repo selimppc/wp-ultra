@@ -4,7 +4,7 @@
 				<div class="span12">
 					<div class="slogan1">
 						<div class="txt1">We Pay Cash for any Cars &  <span>remove your unwanted car for FREE</span></div>
-						<div class="txt2">Call Now 123 456 678 & Get Cash for your Junk Car</div>
+						<div class="txt2">Call Now 0476 188 363 & Get Cash for your Junk Car</div>
 					</div>
 
 					<div id="banner_wrapper">

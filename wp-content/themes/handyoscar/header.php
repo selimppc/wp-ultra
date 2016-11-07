@@ -57,7 +57,7 @@
 					<div class="row">
 						<div class="span10 offset2">
 
-							<div class="phone1_wrapper"><div class="phone1">1 800 123 4567</div></div>
+							<div class="phone1_wrapper"><div class="phone1">0476 188 363</div></div>
 
 							<div class="social_wrapper">
 								<ul class="social clearfix">
