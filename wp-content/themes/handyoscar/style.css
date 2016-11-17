@@ -664,7 +664,33 @@ img.textaligncenter {
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
 	body{padding-left: 0; padding-right: 0;}
-	.container{width: 440px;}
+	
+.logo > img {
+    width: 100px;
+}
+.phone1_wrapper{
+	margin-left:15px;
+}
+
+.social_wrapper{
+	margin-right:15px;
+}
+
+.navbar_ .btn-navbar{
+	margin-right:15px;
+}
+
+.breadcrumbs1{
+	padding:15px;
+}
+
+#content{
+	padding-left:15px;
+	padding-right:15px;
+	
+}
+
+
 
 	.navbar_ {float: none; margin-top: 0;}
 	.navbar_ .nav{display: block; background: #fff;}
@@ -705,15 +731,57 @@ img.textaligncenter {
 
 
 }
-@media (min-width: 481px) and (max-width: 767px) {
+@media screen and (max-width: 640px) {
 
+	.splash_wrapper .block2{
+		padding:15px;
+	}
+	
+	.common_form_container{
+		width:100%;
+		float:left;
+		margin-top:30px;
+	}
+	
+	.common_form_container input{
+		width:98%;
+	}
+	
+	.common_form_container textarea{
+		width:98%;
+	}
+	
+	.common_form_container input.common_form_submit{
+		width:100%;
+	}
+	
+	.contact_form_box input.inputtext{
+		margin-right:0%;
+		width:98%;
+	}
+	
+	.contact_form_box textarea.inputtext{
+		width:98% !important;
+	}
 
-
-
+	#banner .carousel-box ul li{
+		height:340px;
+	}
+	
+	.banner .banner_inner a .caption{
+		height:auto;
+	}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
-	.container{width: 300px;}
+	#banner .carousel-box ul li{
+		width:100%;
+		margin-left:-22px;
+	}
+	
+	li{
+		margin-left:15px;
+	}
 
 	.phone1_wrapper{float: none; text-align: center; padding-bottom: 15px;}
 
@@ -730,6 +798,21 @@ img.textaligncenter {
 	.page-404 .txt2{font-size: 50px; line-height: 50px;}
 
 
+}
+
+@media screen and (max-width:360px){
+	.common_form_container input{
+		width:95%;
+	}
+	
+	.contact_form_box input.inputtext{
+		margin-right:0%;
+		width:96%;
+	}
+	
+	.contact_form_box textarea.inputtext{
+		width:96% !important;
+	}
 }
 
 /*.envira-gallery-item-inner { border: 2px solid #ff0000;}*/
