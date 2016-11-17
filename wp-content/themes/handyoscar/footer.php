@@ -134,7 +134,7 @@
 			autoAdvance			: true,
 			mobileAutoAdvance	: true,
 			fx					: 'scrollBottom',
-			height: 'auto',
+			height: '32%',
 			hover: false,
 			loader: 'none',
 			navigation: false,
@@ -145,7 +145,7 @@
 			pagination			: true,
 			time: 5000,
 			transPeriod: 1000,
-			minHeight: 'auto'
+			minHeight: '200px'
 		});
 
 	});

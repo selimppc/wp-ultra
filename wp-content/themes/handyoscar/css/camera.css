@@ -1128,7 +1128,7 @@
 }
 @media (max-width: 979px) {
 
-	/*#camera_wrap{height: 235px;}*/
+	#camera_wrap{height: 235px;}
 
 	.camera_wrap .camera_pag .camera_pag_ul {margin-left: -362px;}
 
@@ -1142,7 +1142,7 @@
 }
 @media (max-width: 767px) {
 
-	/*#camera_wrap{height: 200px;}*/
+	#camera_wrap{height: 200px;}
 
 	.camera_wrap .camera_pag .camera_pag_ul {margin-left: -220px;}
 
@@ -1159,7 +1159,7 @@
 
 }
 @media (max-width: 480px) {
-	/*#camera_wrap{height: 200px;}*/
+	#camera_wrap{height: 200px;}
 
 	.camera_wrap .camera_pag .camera_pag_ul {margin-left: -150px;}
 
